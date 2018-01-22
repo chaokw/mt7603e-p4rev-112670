@@ -58,7 +58,7 @@ cmm_objs := $(SRC_DIR)/common/crypt_md5.o\
 # Rate adaptation related files
 ########################################################
 rate_objs := $(SRC_DIR)/rate_ctrl/ra_ctrl.o\
-						$(SRC_DIR)/rate_ctrl/alg_legacy.o
+		$(SRC_DIR)/rate_ctrl/alg_legacy.o
 
 ifeq ($(CONFIG_MT_NEW_RATE_ADAPT_SUPPORT),y)
     EXTRA_CFLAGS += -DNEW_RATE_ADAPT_SUPPORT
