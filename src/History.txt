@@ -41,6 +41,7 @@ Host Driver:
    a. we should use CONFIG_SINGLE_SKU_V2, not CONFIG_SINGLE_SKU.
    b. Remove RTMP_TEMPERATURE_TX_ALC because this driver flag is not valid. (controlled by FW)
 
+
 F/W:
 1. Add EDCA and Slot time set command.
 2. Enable and update CCK_MRC fix.
