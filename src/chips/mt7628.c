@@ -4,7 +4,6 @@
 #include "eeprom/mt7628_e2p.h"
 #include "phy/wf_phy_back.h"
 
-
 static VOID mt7628_bbp_adjust(RTMP_ADAPTER *pAd)
 {
 	static char *ext_str[]={"extNone", "extAbove", "", "extBelow"};
@@ -148,7 +147,6 @@ static void mt7628_switch_channel(RTMP_ADAPTER *pAd, UCHAR channel, BOOLEAN scan
 	/* Channel latch */
 	pAd->LatchRfRegs.Channel = channel;
 
-
 	DBGPRINT(RT_DEBUG_OFF,
 			("%s(): Switch to Ch#%d(%dT%dR), BBP_BW=%d\n",
 			__FUNCTION__,
@@ -253,9 +251,9 @@ static VOID mt7628_init_mac_cr(RTMP_ADAPTER *pAd)
         mac_val = mac_val & ~(BIT1);
 	RTMP_IO_WRITE32(pAd, DMA_TMCFR0, mac_val);
 
-    RTMP_IO_READ32(pAd, RMAC_TMR_PA, &mac_val);
-    mac_val = mac_val & ~BIT31;
-    RTMP_IO_WRITE32(pAd, RMAC_TMR_PA, mac_val);
+	RTMP_IO_READ32(pAd, RMAC_TMR_PA, &mac_val);
+	mac_val = mac_val & ~BIT31;
+	RTMP_IO_WRITE32(pAd, RMAC_TMR_PA, mac_val);
 	/* Configure all rx packets to HIF, except WOL2M packet */
 	RTMP_IO_READ32(pAd, DMA_RCFR0, &mac_val);
 	mac_val = 0x00010000; // drop duplicate
