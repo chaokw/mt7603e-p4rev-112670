@@ -24,9 +24,9 @@ config MT_NEW_MBSSID_MODE
 	default n
 
 config MT_ENHANCE_NEW_MBSSID_MODE
-    bool "Enhanced MBSSID mode"
-    depends on MT_NEW_MBSSID_MODE
-    default n
+	bool "Enhanced MBSSID mode"
+	depends on MT_NEW_MBSSID_MODE
+	default n
 
 config MT_APCLI_SUPPORT
 	bool "AP-Client Support"
