@@ -15,6 +15,7 @@
 */
 
 #include "rt_config.h"
+
 #ifdef MT7603_E1
 #include "mcu/mt7603_firmware.h"
 #endif /* MT7603_E1 */
