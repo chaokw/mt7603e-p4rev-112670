@@ -177,8 +177,8 @@ config MT_WIFI_WORK_QUEUE
     default n
 
 config MT_WIFI_SKB_RECYCLE
-    bool "SKB Recycle(Linux)"
-    depends on WIFI_DRIVER
+	bool "SKB Recycle(Linux)"
+	depends on WIFI_DRIVER
     default n
 
 config MT_RTMP_FLASH_SUPPORT
