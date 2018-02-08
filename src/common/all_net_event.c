@@ -9,7 +9,6 @@ void wext_send_event(PNET_DEV net_dev, const char *peer_mac_addr,
 	memcpy(&event_data.FbtNotifyExtApMac, bssid, 6);
 	event_data.FbtChannel = channel;
 	event_data.FbtRSSI = rssi;
-
 	event_data.FbtNotifyType = event_type;
 	memcpy(&event_data.FbtNotifyMac, peer_mac_addr, 6);
 
