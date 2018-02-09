@@ -87,9 +87,9 @@ config DOT11W_PMF_SUPPORT
     default y
 
 config TXBF_SUPPORT
-    bool "Tx Bean Forming Support"
-    depends on WIFI_DRIVER
-    default n
+    	bool "Tx Bean Forming Support"
+    	depends on WIFI_DRIVER
+    	default n
 
 #config WMM_ACM_SUPPORT
 #	bool "WMM ACM"
