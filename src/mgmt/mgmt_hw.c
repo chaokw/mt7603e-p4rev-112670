@@ -30,14 +30,9 @@
 INT dev_adjust_radio(RTMP_ADAPTER *pAd)
 {
 	struct hw_setting new_cfg, *hw_cfg = &pAd->hw_cfg;
-
-
 	NdisZeroMemory(&new_cfg, sizeof(struct hw_setting));
-
 	
 	/* For all wdev, find the maximum inter-set */
-
-	
 	if (hw_cfg->bbp_bw != new_cfg.bbp_bw)
 	{
 		bbp_set_bw(pAd, new_cfg.bbp_bw);
