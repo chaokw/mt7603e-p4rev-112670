@@ -26,13 +26,10 @@
 
 #include "rt_config.h"
 
-
 INT phy_probe(RTMP_ADAPTER *pAd)
 {
-
 	return TRUE;
 }
-
 
 NDIS_STATUS NICInitBBP(RTMP_ADAPTER *pAd)
 {
