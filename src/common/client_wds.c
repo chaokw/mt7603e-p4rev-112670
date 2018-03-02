@@ -23,7 +23,6 @@
 
 
 #ifdef CLIENT_WDS
-
 #include "rt_config.h"
 
 VOID CliWds_ProxyTabInit(
