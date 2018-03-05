@@ -33,8 +33,8 @@ extern UCHAR	RSN_OUI[];
 extern UCHAR	WME_INFO_ELEM[];
 extern UCHAR	WME_PARM_ELEM[];
 extern UCHAR	RALINK_OUI[];
-extern UCHAR BROADCOM_OUI[];
-extern UCHAR WPS_OUI[];
+extern UCHAR 	BROADCOM_OUI[];
+extern UCHAR 	WPS_OUI[];
 
 
 static void ap_assoc_info_debugshow(
