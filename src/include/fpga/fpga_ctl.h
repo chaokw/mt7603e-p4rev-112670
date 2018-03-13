@@ -1,7 +1,5 @@
-
 #ifndef __FPGA_CTL_H__
 #define __FPGA_CTL_H__
-
 
 #ifdef MT_MAC
 typedef enum _MT_MAC_TXS_TYPE{
@@ -39,7 +37,6 @@ struct fpga_ctrl {
 	UINT8 fpga_on;
 	UINT8 fpga_tr_stop;
 	UINT8 vco_cal;
-
 	UINT8 dma_mode;
 
 #ifdef MT_MAC
