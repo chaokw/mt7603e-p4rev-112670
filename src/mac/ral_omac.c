@@ -26,8 +26,6 @@
 
 #include "rt_config.h"
 
-
-
 static UCHAR *txwi_txop_str[]={"HT_TXOP", "PIFS", "SIFS", "BACKOFF", "Invalid"};
 #define TXWI_TXOP_STR(_x)	((_x) <= 3 ? txwi_txop_str[(_x)]: txwi_txop_str[4])
 VOID dump_rtmp_txwi(RTMP_ADAPTER *pAd, TXWI_STRUC *pTxWI)
@@ -81,7 +79,6 @@ VOID dump_rtmp_rxwi(RTMP_ADAPTER *pAd, RXWI_STRUC *pRxWI)
 	DBGPRINT(RT_DEBUG_OFF, ("\tBW=%d\n", rxwi_o->bw));
 	DBGPRINT(RT_DEBUG_OFF, ("\tSGI=%d\n", rxwi_o->sgi));
 	DBGPRINT(RT_DEBUG_OFF, ("\tSTBC=%d\n", rxwi_o->stbc));
-
 
 	DBGPRINT(RT_DEBUG_OFF, ("\tSequence=%d\n", rxwi_o->SEQUENCE));
 	DBGPRINT(RT_DEBUG_OFF, ("\tFRAG=%d\n", rxwi_o->FRAG));
