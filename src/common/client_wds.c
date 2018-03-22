@@ -46,7 +46,6 @@ VOID CliWds_ProxyTabInit(
 
 	for (idx = 0; idx < CLIWDS_HASH_TAB_SIZE; idx++)
 		initList(&pAd->ApCfg.CliWdsProxyTb[idx]);
-
 	return;
 }
 
