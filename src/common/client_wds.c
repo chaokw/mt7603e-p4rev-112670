@@ -20,8 +20,6 @@
 
 	Abstract:
 */
-
-
 #ifdef CLIENT_WDS
 #include "rt_config.h"
 
