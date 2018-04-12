@@ -36,7 +36,6 @@ static void mt7603_tx_pwr_gain(RTMP_ADAPTER *pAd, UINT8 channel)
 	CHAR tx_0_pwr;
 	struct MT_TX_PWR_CAP *cap = &pAd->chipCap.MTTxPwrCap;
 
-
 	return;//Carter add for first day link.
 
 	tx_0_pwr = cap->tx_0_target_pwr_g_band;
