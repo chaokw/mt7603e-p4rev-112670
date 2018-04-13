@@ -77,7 +77,6 @@ VOID CliWds_ProxyTabDestory(
 	return;
 }
 
-
 PCLIWDS_PROXY_ENTRY CliWdsEntyAlloc(
 	IN PRTMP_ADAPTER pAd)
 {
