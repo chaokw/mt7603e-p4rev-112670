@@ -38,7 +38,6 @@ UINT32 AsicGetCrcErrCnt(RTMP_ADAPTER *pAd)
 	return RxStaCnt.field.CrcErr;
 }
 
-
 UINT32 AsicGetCCACnt(RTMP_ADAPTER *pAd)
 {
 	RX_STA_CNT1_STRUC RxStaCnt1;
@@ -47,7 +46,6 @@ UINT32 AsicGetCCACnt(RTMP_ADAPTER *pAd)
 	
 	return RxStaCnt1.field.FalseCca;
 }
-
 
 UINT32 AsicGetChBusyCnt(RTMP_ADAPTER *pAd, UCHAR ch_idx)
 {
