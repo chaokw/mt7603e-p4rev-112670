@@ -80,8 +80,6 @@ INT mt_hif_sys_init(RTMP_ADAPTER *pAd)
 	}
 #endif /* RTMP_MAC_PCI */
 
-
-
 	return TRUE;
 }
 
