@@ -26,7 +26,6 @@
 
 #include <rt_config.h>
 
-
 #ifdef DBG
 VOID dump_tr_entry(RTMP_ADAPTER *pAd, INT tr_idx, RTMP_STRING *caller, INT line)
 {
